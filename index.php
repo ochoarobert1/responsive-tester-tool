@@ -13,6 +13,7 @@
             padding: 0;
             width: 100%;
             max-width: 100%;
+            background: #fbfbfb;
             height: 100%;
             font-family: 'Lato', sans-serif;
         }
@@ -27,6 +28,7 @@
             display: block;
             margin: .5rem auto;
             transition: all .3s ease-in-out;
+            background: #fff;
         }
 
         .submenu {
@@ -36,6 +38,10 @@
             display: none;
             background: white;
             padding: .5rem;
+        }
+
+        .last-li {
+            color: white;
         }
 
         .submenu:hover {
@@ -107,6 +113,7 @@
                     document.getElementById("iframe-container").width = e.target.dataset.width;
                     document.getElementById("iframe-container").height = e.target.dataset.height;
                     document.getElementById('selected-viewport').innerText = 'Seleccionaste: ' + e.target.text;
+                    document.getElementById('secondSelected').innerText = e.target.text;
                 }
             }, false);
         }
@@ -165,6 +172,7 @@
                         <li><a onclick="changeSize()" class="responsive" data-width="424" data-height="719">424x719 - G6</a></li>
                         <li><a onclick="changeSize()" class="responsive" data-width="414" data-height="896">414x896</a></li>
                         <li><a onclick="changeSize()" class="responsive" data-width="414" data-height="736">414x736</a></li>
+                        <li><a onclick="changeSize()" class="responsive" data-width="393" data-height="851">393x851</a></li>
                         <li><a onclick="changeSize()" class="responsive" data-width="375" data-height="812">375x812</a></li>
                         <li><a onclick="changeSize()" class="responsive" data-width="375" data-height="667">375x667</a></li>
                         <li><a onclick="changeSize()" class="responsive" data-width="360" data-height="740">360x740</a></li>
@@ -175,6 +183,9 @@
             </li>
             <li>
                 <a onclick="changeOrientation()"><img src="phone-orientation.png" alt="" height="20" width="20"></a>
+            </li>
+            <li class="last-li">
+                Seleccionado: <span id="secondSelected"></span>
             </li>
         </ul>
         <div class="responsive-url-container">
