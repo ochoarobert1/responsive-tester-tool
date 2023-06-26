@@ -185,7 +185,7 @@
                 <a onclick="changeOrientation()"><img src="phone-orientation.png" alt="" height="20" width="20"></a>
             </li>
             <li class="last-li">
-                Seleccionado: <span id="secondSelected"></span>
+                Seleccionado: <span id="secondSelected">1024x768</span>
             </li>
         </ul>
         <div class="responsive-url-container">
