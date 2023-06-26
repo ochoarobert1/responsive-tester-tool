@@ -182,7 +182,7 @@
                 </div>
             </li>
             <li>
-                <a onclick="changeOrientation()"><img src="phone-orientation.png" alt="" height="20" width="20"></a>
+                <a onclick="changeOrientation()"><img src="img/phone-orientation.png" alt="" height="20" width="20"></a>
             </li>
             <li class="last-li">
                 Seleccionado: <span id="secondSelected">1024x768</span>
